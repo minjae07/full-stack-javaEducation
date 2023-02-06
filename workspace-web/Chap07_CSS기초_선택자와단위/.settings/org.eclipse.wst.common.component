@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Chap07_CSS기초_선택자와단위">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="Chap07_CSS기초_선택자와단위"/>
+        <property name="java-output-path" value="/Chap07_CSS기초_선택자와단위/build/classes"/>
+    </wb-module>
+</project-modules>

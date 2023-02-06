@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_Client_Address" directorySegmentName="seg_0" id="D2214980-8EAC-28C1-7854-CF744196DD21">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:08:14 UTC</createdTime>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<engineerTo>
+<item key="F9027CEA-6DC2-EB5E-CFD9-10140C7CA16E" value="true"/>
+</engineerTo>
+<sourcePk>6040F714-6376-5993-383B-F6033644DC5A</sourcePk>
+<dominantRole>97677EF6-AF38-597B-ABC4-665EBF989B08</dominantRole>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>97677EF6-AF38-597B-ABC4-665EBF989B08</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9B4E889C-27A7-1728-AEE6-2072F0EFEE1F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

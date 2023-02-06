@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#contents {
+	width: 450px;
+	margin: 0 auto;
+}
+
+#contents img {
+	float: left;
+	margin-right: 25px;
+}
+
+ul{
+	list-style: none;
+	padding-top: 40px;
+}
+
+li{
+	margin-bottom: 10px;
+}
+
+li label {
+	width: 80px;
+	float: left;
+	text-align: left;
+}

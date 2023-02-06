@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.board">
+	<resultMap type="articleVO" id="articleResult">
+		<result property="level" column="lvl"/>
+		<result property="articleNo" column="articleNo"/>
+		<result property="parentNo" column="parentNo"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<result property="imageFileName" column="imageFileName"/>
+		<result property="writeDate" column="writeDate"/>
+	</resultMap>
+	
+	<select id="selectAllArticlesList" resultMap="articleResult">
+		<![CDATA[
+		select * from (
+		                select rownum as recNum, lvl
+		                      ,articleNo
+		                      ,parentNo
+		                      ,title
+		                      ,id
+		                      ,writeDate
+		                from (select level as lvl
+		                              ,articleNo
+		                              ,parentNo
+		                              ,title
+		                              ,id
+		                              ,writeDate
+		                        from t_board
+		                        start WITH parentno=0              
+		                        CONNECT by PRIOR articleno=parentno 
+		                        order SIBLINGS by articleno desc
+		                      )  
+		            )
+		where recNum BETWEEN (#{section}-1)*100+(#{pageNum}-1)*10+1 and (#{section}-1)*100+#{pageNum}*10
+		]]>
+	</select>
+	
+	<select id="selectTotArticles" resultType="int">
+		select count(articleNo) from t_board
+	</select>
+	
+	<select id="selectKeywordSearch" resultType="String" parameterType="String">
+		<![CDATA[
+			SELECT title FROM t_board
+			WHERE 
+			TITLE LIKE '%' || #{keyword} || '%'
+			ORDER BY writeDate DESC
+		]]>
+	</select>
+	
+	<select id="selectBoardsBySearchWord" resultMap="articleResult" parameterType="String">
+			SELECT T.* FROM t_board T
+			WHERE 
+			T.TITLE LIKE '%' || #{searchWord} || '%'
+			ORDER BY T.writeDate DESC		
+	</select>
+	
+	
+	<insert id="insertMember" parameterType="memberVO">
+		<![CDATA[
+			INSERT INTO T_MEMBER (id, pwd, name, email)
+			VALUES (#{id}, #{pwd}, #{name}, #{email})
+		]]>
+	</insert>
+	
+	<delete id="deleteMember" parameterType="String">
+		<![CDATA[
+			DELETE FROM t_MEMBER
+			WHERE
+			ID = #{id}
+		]]>
+	</delete>
+	
+	<select id="loginById" resultType="memberVO" parameterType="memberVO">
+		<![CDATA[
+			SELECT * FROM  T_MEMBER
+			WHERE ID=#{id} AND PWD=#{pwd}
+		]]>
+	</select>
+
+</mapper>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

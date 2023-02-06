@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD DBAN 2.0//EN"
+       "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="personService" class="kr.or.shi.PersonServiceImpl">
+		<property name="name">
+			<value>류현진</value>
+		</property>
+	</bean>
+	
+	<bean id="personService1" class="kr.or.shi02.PersonServiceImpl">
+		<constructor-arg value="이순신" />	
+	</bean>
+	
+	<bean id="personService2" class="kr.or.shi02.PersonServiceImpl">
+		<constructor-arg value="이순신" />	
+		<constructor-arg value="30" />
+	</bean>	
+</beans>       
+       
+       
+       

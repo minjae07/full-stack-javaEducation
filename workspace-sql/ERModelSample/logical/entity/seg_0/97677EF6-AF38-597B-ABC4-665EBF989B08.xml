@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="97677EF6-AF38-597B-ABC4-665EBF989B08" name="Client">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 11:27:14 UTC</createdTime>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<engineerTo>
+<item key="F9027CEA-6DC2-EB5E-CFD9-10140C7CA16E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="client_id" id="07BDA0ED-E361-444E-CBD0-A2670F6AEB74">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 11:28:37 UTC</createdTime>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<engineerTo>
+<item key="F9027CEA-6DC2-EB5E-CFD9-10140C7CA16E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_name" id="DD669489-4C5D-6F88-C776-A78F875CCC77">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 11:29:39 UTC</createdTime>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<engineerTo>
+<item key="F9027CEA-6DC2-EB5E-CFD9-10140C7CA16E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4D42E752-2A9B-0E62-146A-F19205FDBA69</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6040F714-6376-5993-383B-F6033644DC5A" name="Client PK">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 11:31:34 UTC</createdTime>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<engineerTo>
+<item key="F9027CEA-6DC2-EB5E-CFD9-10140C7CA16E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>07BDA0ED-E361-444E-CBD0-A2670F6AEB74</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

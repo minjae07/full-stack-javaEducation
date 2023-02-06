@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B622D1C2-5456-B6D9-3A47-839F26343735" name="Address">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>9B4E889C-27A7-1728-AEE6-2072F0EFEE1F</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="city" id="10D63E37-A7F1-CC4B-FEA6-E7B67321E9D0">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>6A2E8A4C-F3E9-B585-1F35-1A177F940FB0</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C6D9C5C6-635C-9CAF-2254-05EBD1A0E38C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="6ECFED79-F4EF-D5D8-3ECF-025B951C24F6">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>FD3063C2-96A6-5646-0BB1-221CF3F39715</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C6D9C5C6-635C-9CAF-2254-05EBD1A0E38C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip" id="9E4DF9C5-F20D-0FA2-77AE-4E2AAD046F4A">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>167FD807-7B19-D2FA-4A70-D05AD32972EC</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1A177559-53C4-F28D-31B1-876650921FFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_client_id" id="B2BC8C99-44D1-E05A-FD8F-608429352AE3">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>735D7CED-4C79-553E-A916-33CA7F182A54</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="281BDB07-6E9E-B0D3-0E20-E5A019B80B62" referredColumn="A4EEC6F8-9B9B-1427-5C64-109845A8DD0E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73E4CBB7-271D-0CCD-7FB5-2AC24910FBDC" name="Address_PK">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>C025BEA8-AD23-495C-9186-66C1C8563340</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2BC8C99-44D1-E05A-FD8F-608429352AE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="443FA89B-83B9-D133-E7D9-30F822E654F9" name="Address_Client_FK">
+<createdBy>dcu</createdBy>
+<createdTime>2021-06-09 12:15:01 UTC</createdTime>
+<generatorID>D2214980-8EAC-28C1-7854-CF744196DD21</generatorID>
+<ownerDesignName>ERModelSample</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2BC8C99-44D1-E05A-FD8F-608429352AE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

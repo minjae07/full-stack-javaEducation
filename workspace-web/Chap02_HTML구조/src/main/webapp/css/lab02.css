@@ -1,0 +1,16 @@
+/* 외부 스타일 시트로 작성함 */
+
+@charset "UTF-8";
+
+		h1 {
+			color: red;
+			background-color: wheat;
+		}
+		h3 {
+			color: yellow;
+			background-color: black;
+		}
+		h5 {
+			color: green;
+			background-color: black;
+		}

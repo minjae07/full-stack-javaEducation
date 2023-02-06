@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS기초-3</title>
+	<style type="text/css">
+		/* id선택자에게 css를 적용시키고자 한다면, #아이디값 형태로 지정을 해야한다.*/
+		#header {
+			width: 800px;			/*너비*/
+			padding: 0px;			/*안쪽 여백*/
+			background: red;		
+		}
+		
+		/* overflow 속성
+			visivle: 기본값으로 내용이 더 길어도 그대로 보이는 값
+			hidden: 내용이 넘치면 자른다. 자른부분은 보이지 않는다
+			*/
+		#wrap {
+			width: 800px;
+			padding: 0;
+			background: red;
+			overflow: auto;
+		}
+		
+		#content {
+			width: 500px;
+			float: left;		/*배치하는데 물결흐르듯이 왼쪽으로 붙여서 배치를 시켜라*/
+			padding: 0;
+			background: yellow;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>header 영역</h1>
+	</div>
+	
+	<div id="wrap">
+		<div id="aside">
+			<h1>aside 영역</h1>
+		</div>
+	
+	
+	<div id="content">
+		<h1>content 영역</h1>
+	</div>
+	</div>
+</body>
+</html>
